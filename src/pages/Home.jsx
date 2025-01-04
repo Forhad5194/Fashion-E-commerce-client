@@ -1,8 +1,11 @@
+import LatestCollections from "../components/LatestCollections";
+import Banner from "../components/shared/Banner";
 
 const Home = () => {
     return (
         <div>
-            <h2>This is my Home area .. </h2>            
+           <Banner />   
+           <LatestCollections />        
         </div>
     );
 };

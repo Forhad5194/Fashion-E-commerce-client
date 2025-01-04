@@ -6,6 +6,7 @@ import Collection from "../pages/Collection";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Card from "../pages/Card";
+import Product from "../pages/Product";
 
 
 export const router = createBrowserRouter([
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
            {
              path: "/card",
              element: <Card />
+           },
+           {
+             path: "/product/:productId",
+             element: <Product />
            }
            
         ]
