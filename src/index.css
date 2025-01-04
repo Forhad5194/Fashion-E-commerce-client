@@ -16,3 +16,11 @@ a.active hr {
     font-style: normal;
   }
   
+
+  @media (max-width: 640px) {
+    a.active {
+            background-color: #fb923c;
+            color: white;
+            border-radius: 7px;
+    }
+  }
