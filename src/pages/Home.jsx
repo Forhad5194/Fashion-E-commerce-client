@@ -1,5 +1,7 @@
 import BestSeller from "../components/BestSeller";
 import LatestCollections from "../components/LatestCollections";
+import NewsLatterBox from "../components/NewsLatterBox";
+import OurPolicy from "../components/OurPolicy";
 import Banner from "../components/shared/Banner";
 
 const Home = () => {
@@ -7,7 +9,9 @@ const Home = () => {
         <div>
            <Banner />   
            <LatestCollections />   
-           <BestSeller />     
+           <BestSeller />    
+           <OurPolicy /> 
+           <NewsLatterBox />
         </div>
     );
 };
