@@ -3,8 +3,9 @@ import { GoSearch } from "react-icons/go";
 import { FaRegUser } from "react-icons/fa";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { BiMenuAltRight } from "react-icons/bi";
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { IoIosArrowBack } from "react-icons/io";
+import { ShopContext } from '../../context/ShopContext';
 
 
 
@@ -15,6 +16,8 @@ import { IoIosArrowBack } from "react-icons/io";
 const Navbar = () => {
 
     const [visible, setVisible] = useState(false)
+
+    const {setSlowSearch} = useContext(ShopContext)
 
 
 
@@ -41,7 +44,7 @@ const Navbar = () => {
 
             </ul>
             <div className='flex items-center gap-8 '>
-                <GoSearch className='w-5 min-w-5 h-6' />
+                <GoSearch onClick={()=>setSlowSearch(true)} className='w-5 min-w-5 h-6 cursor-pointer' />
                 <div className='group relative'>
                     <FaRegUser className='cursor-pointer  h-6 ' />
                     <div className='group-hover:block hidden absolute dropdown-menu  right-0 pt-4'>
